@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="onks_purple">#6A1B9A</color>
+    <color name="onks_purple_dark">#4A148C</color>
+    <color name="onks_purple_light">#9C4DCC</color>
+    <color name="onks_maroon">#800000</color>
+    <color name="onks_orange">#FF9800</color>
+    <color name="onks_yellow">#FFEB3B</color>
+    <color name="onks_red">#F44336</color>
+    <color name="onks_green">#4CAF50</color>
+    <color name="bg_dark">#121212</color>
+    <color name="bg_surface">#1E1E1E</color>
+    <color name="bg_card">#2A2A2A</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B0B0</color>
+    <color name="text_hint">#757575</color>
+    <color name="status_ready">#4CAF50</color>
+    <color name="status_transmitting">#F44336</color>
+    <color name="status_connecting">#FF9800</color>
+    <color name="ptt_idle_start">#6A1B9A</color>
+    <color name="ptt_idle_end">#4A148C</color>
+    <color name="ptt_active_start">#FF9800</color>
+    <color name="ptt_active_end">#FFEB3B</color>
+</resources>

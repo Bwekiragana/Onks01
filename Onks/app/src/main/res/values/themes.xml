@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Onks" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/onks_purple</item>
+        <item name="colorPrimaryVariant">@color/onks_purple_dark</item>
+        <item name="colorSecondary">@color/onks_orange</item>
+        <item name="colorSurface">@color/bg_surface</item>
+        <item name="colorBackground">@color/bg_dark</item>
+        <item name="android:colorBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>

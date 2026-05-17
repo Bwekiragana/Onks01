@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:id="@+id/headerBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@color/bg_surface"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvPerformerRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KUC D&amp;D Production"
+            android:textSize="13sp"
+            android:textColor="@color/onks_purple_light" />
+
+        <TextView
+            android:id="@+id/tvPerformerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Performer"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLiveIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/status_transmitting"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/headerBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/tvCueReceived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15sp"
+        android:textColor="@color/onks_orange"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingHorizontal="16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tvLiveIndicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPtt"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:text="@string/ptt_hold"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:background="@drawable/ripple_ptt"
+        app:cornerRadius="110dp"
+        app:layout_constraintTop_toBottomOf="@id/tvCueReceived"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvConnectionStatus"
+        android:elevation="8dp" />
+
+    <TextView
+        android:id="@+id/tvConnectionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="● Connecting..."
+        android:textSize="13sp"
+        android:textColor="@color/status_connecting"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:background="@drawable/bg_status_card"
+        app:layout_constraintBottom_toTopOf="@id/tvPttHint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvPttHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hold button to talk  ·  Volume Up key also works"
+        android:textSize="13sp"
+        android:textColor="@color/text_hint"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
